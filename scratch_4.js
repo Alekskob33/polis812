@@ -63,10 +63,6 @@ function School(name, minYears) {
     );
     return;
   };
-
-  return {
-    welcome: this.welcome,
-  };
 }
 
 var autoSchool = new School("Парус", 18);

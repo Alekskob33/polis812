@@ -59,7 +59,7 @@ function School(name, minYears) {
     const TEACHER_NAME = this.getTeacher();
 
     alert(
-      "Ваш преподаватель: ${TEACHER_NAME}\n\nЖдём вас по адресу: ${SCHOOL_ADDRESS}"
+      `Ваш преподаватель: ${TEACHER_NAME}\n\nЖдём вас по адресу: ${SCHOOL_ADDRESS}`
     );
     return;
   };

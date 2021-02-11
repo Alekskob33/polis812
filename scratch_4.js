@@ -31,8 +31,8 @@ function School(name, minYears) {
   };
 
   this.getTeacher = function (id) {
-    var id = id && Math.floor(Math.random() * self.getTeacherList().length);
-    return self.getTeacherList()[id];
+    id = id || Math.floor(Math.random() * this.getTeacherList().length);
+    return this.getTeacherList()[id];
   };
 
   this.welcome = function (name, years) {

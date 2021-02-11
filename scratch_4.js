@@ -13,15 +13,15 @@ function School (name, minYears) {
     this.SCHOOL_NAME = name;
 
     this.checkAge = function (age) {
-        if (age <= self.MIN_YEARS) {
+        if (age < this.MIN_YEARS) {
             return {
                 result: false,
-                message: `Вам запрещено водить авто, вам должно быть ${self.MIN_YEARS} лет или больше`
+                message: `Вам запрещено водить авто, вам должно быть ${this.MIN_YEARS} лет или больше`
             };
-        } else if (age === self.MIN_YEARS) {
+        } else if (age >= this.MIN_YEARS) {
             return {
                 result: true,
-                message: "Добро пожаловать в автошколу \"${self.SCHOOL_NAME}\", ${name}"
+                message: `Добро пожаловать в автошколу \"${this.SCHOOL_NAME}\", ${name}`
             };
         }
     };

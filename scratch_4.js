@@ -50,10 +50,10 @@ function School(name, minYears) {
       years = Math.abs(parseFloat(prompt("Укажите ваш возраст")));
     }
 
-    if (self.checkAge(years).result) {
-      alert('Добро пожаловать в автошколу "${self.SCHOOL_NAME}", ${name}');
-    } else if (!self.checkAge(years).result) {
-      return alert(self.checkAge(years).message);
+    if (this.checkAge(years).result) {
+      alert(`Добро пожаловать в автошколу \"${this.SCHOOL_NAME}\", ${name}`);
+    } else if (!this.checkAge(years).result) {
+      return alert(this.checkAge(years).message);
     }
 
     const TEACHER_NAME = getTeacher();

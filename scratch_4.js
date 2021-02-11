@@ -38,11 +38,9 @@ function School(name, minYears) {
   this.welcome = function (name, years) {
     const SCHOOL_ADDRESS = "Санкт-Петербург, ул. Пушкина, дом 23";
 
-    name = name && prompt("Как вас зовут?");
-
-    if (!name) {
+    while (!name) {
       alert("Вы не указали имя!");
-      return this(name, years);
+      name = prompt("Как вас зовут?");
     }
 
     years = years && Math.abs(parseFloat(promtp("Укажите ваш возраст")));

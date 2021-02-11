@@ -65,7 +65,7 @@ function School(name, minYears) {
   };
 }
 
-var autoSchool = new School("Парус", 18);
+const autoSchool = new School("Парус", 18);
 
 autoSchool.welcome();
 autoSchool.welcome("Тест");

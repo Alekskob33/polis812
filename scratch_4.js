@@ -56,7 +56,7 @@ function School(name, minYears) {
       return alert(this.checkAge(years).message);
     }
 
-    const TEACHER_NAME = getTeacher();
+    const TEACHER_NAME = this.getTeacher();
 
     alert(
       "Ваш преподаватель: ${TEACHER_NAME}\n\nЖдём вас по адресу: ${SCHOOL_ADDRESS}"

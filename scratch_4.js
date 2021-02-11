@@ -5,7 +5,7 @@ function School (name, minYears) {
         throw Error("Не указано название школы");
     }
 
-    if (!minYears || parseInt(minYears)) {
+    if (!minYears || isNaN(parseInt(minYears))) {
         throw new Error("Не указано минимальное количество лет");
     }
 

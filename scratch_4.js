@@ -45,10 +45,9 @@ function School(name, minYears) {
 
     years = years && Math.abs(parseFloat(promtp("Укажите ваш возраст")));
 
-    if (years) {
-      // 14
+    while (!years) {
       alert("Вы не указали возраст!");
-      return self(name, years);
+      years = Math.abs(parseFloat(prompt("Укажите ваш возраст")));
     }
 
     if (self.checkAge(years).result) {

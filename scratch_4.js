@@ -1,7 +1,7 @@
 'use strict';
 
 function School (name, minYears) {
-    if (!name || name.trim()) {
+    if (!name || !name.trim()) {
         throw Error("Не указано название школы");
     }
 

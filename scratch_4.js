@@ -43,8 +43,6 @@ function School(name, minYears) {
       name = prompt("Как вас зовут?");
     }
 
-    years = years && Math.abs(parseFloat(promtp("Укажите ваш возраст")));
-
     while (!years) {
       alert("Вы не указали возраст!");
       years = Math.abs(parseFloat(prompt("Укажите ваш возраст")));
